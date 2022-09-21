@@ -1,0 +1,56 @@
+/* Style Jss*/
+html , body 
+{
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    height: 100%;
+}
+#regForm
+{   
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.formclass 
+{
+    border: solid 1px black;
+    border-radius: 22px 22px;
+    height: auto;
+    width: auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+.formclass form p 
+{
+    display:flex;
+    justify-content: space-between;
+}
+.formclass form p label
+{
+    width:40%;
+}
+.formclass form p input
+{
+    width:60%;
+}
+table, th, td 
+{
+    border: 1px solid black;
+    border-radius: 8px;
+    padding:8px;
+    background-color: cadetblue;
+}
+#containerPanier
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

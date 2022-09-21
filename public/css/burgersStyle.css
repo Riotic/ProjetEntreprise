@@ -1,0 +1,210 @@
+/* Dénomination basique de la page */
+* 
+{
+    box-sizing: border-box; /*used to transform all elements in blocks*/
+}
+html,body
+{
+    overflow-x: hidden; /*For avoid to have automatique scroll bar in the side of screen when menu will be hidden*/
+}
+/* Responsive; montre les éléments dès qu'on arrive à cette taille minimum */
+@media all and (min-width:1px) and (max-width:426px)
+{
+    h1
+    {
+        font-size: 0.8em;
+    }
+}
+@media all and (min-width:1px) and (max-width:260px)
+{
+    h1
+    {
+        display: none;
+    }
+}
+@media all and (min-width:1px) and (max-width:745px)
+{
+    div .nav ul
+    {
+        display: none;
+    }
+    .sidebar
+    {
+        position: fixed;
+        top:70px;
+        right: 0px;
+        width: 70%;
+        height: 115px;
+        border-radius: 9px;
+        background-color:gray;
+        z-index: 1;
+        transform: translate(110%, 0);
+        transition:transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+        text-align: center;
+        font-family: 'Acme', sans-serif;
+        color: rgba(248, 248, 231, 0.89);
+    }
+   
+    .buttonIcon /*Construction d'une zone checkbox de la taille que feront les checkbox de style bouton*/
+    {
+        position: absolute;
+        top:60px;
+        right:20px;
+        width:22px;
+        height:22px;
+        cursor: pointer;
+    }
+    .buttonItem /*element corp de tout les bouton*/
+    {
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background: #928e81;
+        
+    }
+    .buttonItem--element1 /* creation de la barre numéro 1 */
+    {
+        
+        position: relative;
+        float:left;
+        transition:all .3s;
+
+    }
+    .buttonItem--element2 /* creation de la barre numéro 2 */
+    {
+        position: relative;
+        float: left;
+        margin-top: 3px;
+    }
+    .buttonItem--element3 /* creation de la barre numéro 3 */
+    {
+        position: relative;
+        float: left;
+        margin-top: 3px;
+    }
+    .buttonItem--element4 /* creation de la barre numéro 3 */
+    {
+        position: relative;
+        float: left;
+        transition:all .3s;
+        margin-top: 3px;
+    }
+    input[type="checkbox"]:checked ~ .buttonIcon > .buttonItem--element1
+    {
+        transform: rotate(135deg);
+        margin-top: 3px;
+    }
+    input[type="checkbox"]:checked ~ .buttonIcon > .buttonItem--element2
+    {
+        transform: rotate(-135deg);
+        margin-top: -3px;
+    }
+    input[type="checkbox"]:checked ~ .buttonIcon > .buttonItem--element3
+    {
+        display: none;
+    }
+    input[type="checkbox"]:checked ~ .buttonIcon > .buttonItem--element4
+    {
+        display: none;
+    }
+    input[type="checkbox"]:checked ~ .buttonIcon > .sidebar {
+        transform: translateX(0);
+    }
+}
+input[id="btnLogin"]
+{
+    display: none;
+}
+
+/* Responsive; cache la classe tant qu'on arrive pas à cette taille minimum */
+@media all and (min-width:745px) 
+{
+    .sidebar{display: none;}
+    .header_responsiv{display: none;}
+}
+
+/*
+
+*/
+/*SideBar*/
+
+/*
+input[type="checkbox"]:checked ~ .buttonIcon > .sidebar {
+transform: translateX(0);}
+*/
+/* FORMULAIRE register */
+
+#regForm
+{   
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+#SignUpTitle
+{
+    padding-bottom: 20px;
+    font-size:1.5em;
+    color: black;
+}
+.formclass 
+{
+    border-radius: 10px;
+    background: #ebe9e4;
+    box-shadow: inset 15px 15px 30px #8f8e86,inset -15px -15px 30px #a7a69e;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    width: 350px;
+    height: 500px;
+}
+.formclass form
+{
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.formclass form p 
+{
+    display:flex;
+    justify-content: center;
+    padding-bottom:7px;
+    padding-top: 7px;
+    width: 100%;
+    color: black;
+}
+.formclass form p input
+{
+    width:80%;
+    height: 2em;
+    padding-left: 4px;
+}
+#privacy
+{
+  width: 80%;
+  padding-left:4px;
+  text-align: center;
+}
+
+.RoadToLogIn
+{
+    color: black;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+#logout a
+{
+    list-style-type: none;
+    cursor: pointer;
+}
+
+#logout form
+{
+    all:none;
+    list-style-type:none;
+}

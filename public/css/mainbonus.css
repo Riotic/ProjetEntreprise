@@ -1,0 +1,244 @@
+/* Base Css */
+html,body
+{ 
+    height: 100%;
+}
+
+* 
+{
+    padding: 0px;
+    margin: 0px;
+}
+
+/* Modification écriture */
+h1
+{
+    text-align: center;
+    font-family: 'Henny Penny', cursive;
+    font-size: 2em;
+    color: white;
+}
+p
+{
+    font-family: 'Acme', sans-serif;
+    color: rgba(248, 248, 231, 0.89);
+}
+
+li
+{
+    font-family: 'Acme', sans-serif;
+    color: rgba(248, 248, 231, 0.89);
+    border-radius: 0px;  /* Neumorphism */
+    background: #928e81;
+    box-shadow: inset 5px 5px 4px #78746a,inset -5px -5px 4px #aca898;
+    height: 20px;
+}
+li:hover
+{
+    border-radius: 0px;
+    background: linear-gradient(145deg, #9c988a, #838074);
+    box-shadow:  5px 5px 4px #78746a,-5px -5px 4px #aca898;
+    color: indigo;         
+}
+button
+{
+    font-family: 'Acme', sans-serif;
+    color: rgba(248, 248, 231, 0.89);
+    border-radius: 0px;  
+    background: #928e81;
+    box-shadow: inset 5px 5px 4px #78746a,inset -5px -5px 4px #aca898;
+}
+button:hover
+{
+    border-radius:0px;
+    background: linear-gradient(145deg, #9c988a, #838074);
+    box-shadow: 5px 5px 4px #78746a,-5px -5px 4px #aca898;
+    color: indigo;
+}
+.child div
+{   
+    display: inline;
+    border: solid 1px; 
+    background: #928e81;
+    box-shadow: inset 5px 5px 4px #78746a,inset -5px -5px 4px #aca898;
+}
+.child div:hover
+{
+    background: linear-gradient(145deg, #9c988a, #838074);
+    box-shadow: 5px 5px 4px #78746a,-5px -5px 4px #aca898;
+}
+
+a
+{
+    font-family: 'Acme', sans-serif;
+    font-size: 0.8em;
+    color: rgba(248, 248, 231, 0.89);
+    text-decoration: none;
+}
+a:hover
+{
+    color: indigo;
+}
+
+/* ---- Modification FlexBox ---- */
+
+/* --- Body ---- */
+.container
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-image: url('../img/backgroundbody.jpg');
+    background-size: cover;
+    flex-direction: column;
+    overflow: hidden; /* important d'overflow hidden le parent; cache les barres d'overflow de l'enfant si elles n'aparaissent pas*/
+}
+
+/* --- Header --- */
+.header
+{
+    background-color: #FF7C00;
+    height: 100px;
+    opacity: 0.6; /* transparence */
+    border-bottom-left-radius: 10px; /* Côté arrondi  */
+    border-bottom-right-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.header div
+{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+.logo_container
+{   
+    flex: 1;
+}
+.logo_container img
+{
+    width:150px;
+    height:112px;
+}
+.nav
+{
+    display: flex;
+    justify-content: center;
+}
+.nav ul
+{
+    list-style: none;
+    display: flex;
+    gap : 20px;
+    padding-top: 40px;
+}
+
+/* --- Main --- */
+.main_div
+{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    /* column-gap: 80px;  espacement entre les colonnes  */
+    flex-wrap: wrap; /* si les div sortent de l'espace */
+    overflow: auto; /* génére un scrolling quand il y a trop d'éléments*/
+    justify-content: space-around;
+}
+/* -Catalogue- */
+.block
+{
+    padding: 20px;
+    width: 200px;
+    height: 290px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 30px; /* Neumorphism */
+    background: linear-gradient(145deg, #9c988a, #838074);
+    box-shadow:  5px 5px 4px #78746a,-5px -5px 4px #aca898;            
+}
+.block:hover
+{
+    border-radius: 30px;
+    background: #928e81;
+    box-shadow: inset 5px 5px 4px #78746a,inset -5px -5px 4px #aca898;            
+}
+.child
+{
+    flex: 1;
+    text-align: center;
+}
+.child img
+{
+    width: 60%;
+    object-fit: scale-down;
+    filter: drop-shadow(5px 5px 4px #161616); /* donne une ombre aux images */
+}
+/* -Produits- */
+
+.square
+{
+    width: 600px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #9b9a92;
+    border-radius: 10px;
+    box-shadow: inset 15px 15px 30px #8f8e86,inset -15px -15px 30px #a7a69e;
+    padding: 10px;
+}
+/* -Reset- -Login- */
+.littlesquare
+{
+    height : 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #9b9a92;
+    border-radius: 10px;
+    box-shadow: inset 15px 15px 30px #8f8e86,inset -15px -15px 30px #a7a69e;
+    padding: 10px;
+    font-family: 'Acme', sans-serif;
+    color: rgba(248, 248, 231, 0.89);
+    text-align: center;
+}
+/* -Admin- */
+.middlesquare
+{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #9b9a92;
+    border-radius: 10px;
+    box-shadow: inset 15px 15px 30px #8f8e86,inset -15px -15px 30px #a7a69e;
+    padding: 10px;
+    font-family: 'Acme', sans-serif;
+    color: rgba(248, 248, 231, 0.89);
+    text-align: center;
+}
+/* --- Footer --- */
+.footer
+{
+    background-color: #7a7575;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.down 
+{
+    height: 60px;
+    width: 50px;
+    object-fit: contain;
+    transition: transform .1s;
+}
+.down:hover
+{
+    transform: scale(1.2);   
+    filter: invert(1) opacity(1); /* change la taille en hover et modifie la couleur */
+}
