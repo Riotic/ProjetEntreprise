@@ -243,7 +243,7 @@
 </script>
 <script>
     function call_expert() {
-    var content = "Synthèse Bilan de compétences \nPour vous connecter sur la plateforme https://bdc-synthese.fr/ veuillez utiliser les logins suivants. \nEmail : " + document.getElementById("email").value + " \nMot de passe :  Expert123456 \n Après divers entretiens avec votre formateur(rice) vous aurez vos identifiants et mot de passe pour vous connecter sur la plateforme trouver-un-expert.com/";
+    var content = "Site projet entreprise \nPour vous connecter sur la plateforme https://bdc-synthese.fr/ veuillez utiliser les logins suivants. \nEmail : " + document.getElementById("email").value + " \nMot de passe :  Expert123456 \n Après divers entretiens avec votre formateur(rice) vous aurez vos identifiants et mot de passe pour vous connecter sur la plateforme trouver-un-expert.com/";
 
         var link = "mailto:" + document.getElementById("email").value
              + "?cc=contact@trouver-un-expert.com"

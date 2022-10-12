@@ -23,10 +23,10 @@
             <div class="container">
                 <div class="header">
                     <div class="logo_container">
-                        <img src="{{asset('images/logo.png')}}" alt="logo">
+                        {{-- <img src="{{asset('images/logo.png')}}" alt="logo"> --}}
                     </div>
                     <div>
-                        <h1>Formulaire pour synthèse</h1>
+                        <h1>Register</h1>
                     </div>
                     <div>
                         <div class="nav">
@@ -93,12 +93,12 @@
                 </div>
 
                 <footer class="footer">
-                    <a href="https://fr-fr.facebook.com/?nocaa=1%22%3E">
+                    {{-- <a href="https://fr-fr.facebook.com/?nocaa=1%22%3E">
                         <img class="down"  src="{{asset('images/logo.png')}}" alt="logofacebook">
                     </a>
                     <a href="https://twitter.com/%22%3E">
                         <img class="down" src="{{asset('images/logo.png')}}" alt="twitter">
-                    </a>
+                    </a> --}}
                 </footer>
             </div>
 

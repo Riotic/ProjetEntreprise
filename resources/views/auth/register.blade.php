@@ -32,7 +32,7 @@
 
             <div class="row-direction">
             <input id="mdpAdmin" type="password" value="" placeholder="Si votre rôle est admin tapez le mot de passe ici" >
-            <div class="btn" onclick=admin()>Cliquez ici pour validez admin</div>
+            <div class="btn" onclick=admin()>Cliquez ici pour validez le role   admin après avoir rentré le mot de passe</div>
             </div>
 
             {{-- <p>Mettez une photo si vous le désirez<input type="file" name="PDPuser"></p> --}}
@@ -60,7 +60,7 @@
         function admin() {
             var mdp = document.getElementById("mdpAdmin").value;
             var y = 'admin';
-            if(mdp == 'admin6288'){
+            if(mdp == 'IAmAdmin'){
                 document.getElementById("change").value = y;
             };
             console.log(y);

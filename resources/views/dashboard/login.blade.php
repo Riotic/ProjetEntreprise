@@ -9,7 +9,7 @@
               <div class="d-flex justify-content-center py-4">
                 <a href="/index" class="logo d-flex align-items-center w-auto">
                   <img src="assets/img/logo.png" alt="">
-                  <span class="d-none d-lg-block">Synthèse Bilan de compétences</span>
+                  <span class="d-none d-lg-block">Site Projet Entreprise</span>
                 </a>
               </div><!-- End Logo -->
 
@@ -65,9 +65,7 @@
                 </div>
               </div>
 
-              <div class="credits">
-                Designed by <a href=" /">Bilan de compétences</a>
-              </div>
+              
 
             </div>
           </div>

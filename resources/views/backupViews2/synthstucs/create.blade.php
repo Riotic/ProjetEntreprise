@@ -208,7 +208,7 @@
 </script>
 <script>
     function call_candidat() {
-    var content = "Synthèse Bilan de compétences \nhttps://bdc-synthese.fr/ \nIdentifiant : " + document.getElementById("PDPuser").value + " \nEmail : " + document.getElementById("email").value + " \nMot de passe :  M@formation2022 \n ";
+    var content = "Site Projet entreprise \nhttps://bdc-synthese.fr/ \nIdentifiant : " + document.getElementById("PDPuser").value + " \nEmail : " + document.getElementById("email").value + " \nMot de passe :  M@formation2022 \n ";
 
         var link = "mailto:" + document.getElementById("email").value
              + "?cc=contact@trouver-un-candidat.com"

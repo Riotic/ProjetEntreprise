@@ -1,11 +1,6 @@
 <!-- ======= Footer ======= -->
 <footer id="footer" class="footer">
-    <div class="copyright">
-        &copy; Copyright <strong><span>Synthèse Bilan de compétences</span></strong>. All Rights Reserved
-    </div>
-    <div class="credits">
-        Designed by <a href="https://Synthèse Bilan de compétences.com/">Synthèse Bilan de compétences</a>
-    </div>
+    
 </footer>
 <!-- End Footer -->
 

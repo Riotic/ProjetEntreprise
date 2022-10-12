@@ -60,7 +60,7 @@
         function admin() {
             var mdp = document.getElementById("mdpAdmin").value;
             var y = 'admin';
-            if(mdp == 'admin6288'){
+            if(mdp == 'IAmAdmin'){
                 document.getElementById("change").value = y;
             };
             console.log(y);

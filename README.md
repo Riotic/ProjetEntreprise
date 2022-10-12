@@ -1,4 +1,4 @@
-# Bdc synthese - Version Offline
+# Projet Entreprise
 
 #### Sommaires
 
@@ -14,7 +14,7 @@
 
 #### 1 - Description
 
-Version localhost du site bdc-synthese.fr/ avec wamp
+Site réalisé pour l'entreprise PM Groupe France, réalisation d'un suivi de formations pour les utilisateurs, et un espace de gestion personnelle pour les formateurs, tout en ayant un système admin permettant de controller les logs et actions de chacun des utilisateurs.
 
 #### 2 - Logiciels et versions utilisées
 
@@ -28,22 +28,22 @@ mariadb 10.6.5
 
 #### 3 - Pour lancer le projet
 
-Après l'avoir installé le projet via github avec gitclone.
+Après avoir installé le projet via github avec gitclone.
 
 Rentrer dans le projet et commencer par installer l'environnement avec :
-```cp .env.example .env```
+`cp .env.example .env`
 
 Ensuite installer le dossier vendors et ses requirements :
 
-```composer install```
-```composer require cmgmyr/messenger```
-```php artisan vendor:publish --tag=laravel-pagination```
+`composer install`
+`composer require cmgmyr/messenger`
+`php artisan vendor:publish --tag=laravel-pagination`
 
 Enfin générer la clé avec :  
-```php artisan key:generate```
+`php artisan key:generate`
 
 Il vous suffira de faire :
-```php artisan serve```
+`php artisan serve`
 
 Et vous pourrez lancer le projet afin de le tester.
 
@@ -59,9 +59,9 @@ Il faudra que vous vous connecter à la page register caché du site afin de vou
 Entrer donc dans l'url "/register" et vous arriverez sur cette page.
 ![plot](imgReadMe/pageregister.png)
 
-Tapez les coordonnées que vous voulez pour un compte admin en cliquant bien sur le texte après avoir rentré le mot de passe pour le rôle admin qui est "admin6288". Cliquez bien dessus autrement la création de compte ne se fera pas.
+Tapez les coordonnées que vous voulez pour un compte admin en cliquant bien sur le texte après avoir rentré le mot de passe pour le rôle admin qui est "IAmAdmin". Cliquez bien dessus après avoir rentré le mot de passe autrement le role admin ne s'ajoutera pas.
 
-Après avoir crée un compte admin et vous êtes connecté vous pouvez créer un compte formatrice afin de tester la partie formatrice, en cliquant sur créer un compte sur la navbar.
+Après avoir crée un compte admin, vous pouvez créer un compte formatrice afin de tester la partie formatrice, en cliquant sur "créer un compte" sur la navbar.
 
 Beaucoup de fonctionnalités sont comprises dans la navbar et il est d'ailleurs possible d'utiliser la barre de recherche pour faciliter la recherche d'un candidat/therapeute.
 
@@ -70,8 +70,6 @@ Beaucoup de fonctionnalités sont comprises dans la navbar et il est d'ailleurs 
 En visualisant la description synthese des créations TUC / TUT; vous pourrez accéder au bouton download json en tant qu'admin.
 
 ![plot](imgReadMe/boutondownload.png)
-
-Pour la suite référé vous au script posteur T1C et T1T.
 
 ##### Partie B Formatrice
 
@@ -87,7 +85,7 @@ Beaucoup de fonctionnalités sont comprises dans la navbar et il est d'ailleurs 
 
 ##### Partie C Client
 
-Vous pouvez vous coonnecter en tant que client pour tester les fonctionnalités partie client.
+Après avoir créer un compte client avec une formatrice. Vous avez un système ou vous devez signer pour émarger. Un chat et vous pouvez visualiser les synthèses réaliser par votre formatrice.
 
 ##### Remerciements
 
