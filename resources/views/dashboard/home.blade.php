@@ -3,7 +3,7 @@
 
 <head>
 
-    <title>Dashboard Bilan de compétences</title>
+    <title>Dashboard Site Projet Entreprise</title>
     @include('link')
 
 </head>
